@@ -148,6 +148,8 @@
 .notes-section{
     background-color: #fbfbfb;
     padding-top: 100px;
+    z-index: 1;
+    position: relative;
 }
 
 #notes-heading{
@@ -200,4 +202,49 @@
     font-size: 16px;
     font-weight: 400;
     color: rgba(98, 115, 130, 1);
+}
+.solution-section{
+    padding: 120px 0;
+    margin-top: -70px;
+    z-index: 99;
+    background-color: white;
+    position: relative;
+}
+.solution-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+#solution-image img{
+    border-radius: 12px;
+}
+
+#solution-text h3{
+    color: rgba(70, 145, 101, 1);
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+#solution-text h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: rgba(0, 25, 49, 1);
+    width: 600px;
+}
+#solution-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(98, 115, 130, 1);
+    width: 600px;
+    margin: 20px auto;
+}
+#solution-text ul li{
+    color: rgba(0, 25, 49, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+}
+#solution-text ul li{
+    list-style-image: url(assets/CheckCircle.png);
 }
