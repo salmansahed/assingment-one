@@ -39,6 +39,7 @@
     text-decoration-thickness: 2px;
 }
 .navbar button{
+    font-size: 16px;
     padding: 12px 16px;
     font-weight: 600;
     width: 164px;
@@ -235,7 +236,7 @@
 
 #solution-text h3{
     color: rgba(70, 145, 101, 1);
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 16px;
 }
