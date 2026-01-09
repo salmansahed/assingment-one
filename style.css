@@ -5,39 +5,40 @@
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
 }
-.coustom-width{
+.custom-width{
     width: 1360px;
     margin:0 auto;
+    padding: 0 16px;
 }
-.nevbar{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
 }
-.nevbar img{
+.navbar img{
     width: 139px;
     height: 60px;
 }
-.nevbar ul{
+.navbar ul{
     display: flex;
     list-style: none;
     gap: 32px;
     font-size: 16px;
     font-weight: 500;
 }
-.nevbar ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: black;
 }
-.nevbar ul li:hover{
+.navbar ul li:hover{
     text-decoration: underline;
     text-decoration-color: #ee2805;
-    transition: 0.2s;
+    transition:all 0.2s ease;
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
 }
-.nevbar button{
+.navbar button{
     padding: 12px 16px;
     font-weight: 600;
     width: 164px;
@@ -47,8 +48,10 @@
     border-radius: 4px;
     color: white;
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
 }
-.nevbar button:hover{
+.navbar button:hover{
+    background-color: #44b473;
     box-shadow: 0 8px 20px rgba(70, 145, 101, 0.4);
     transform: translateY(-2px);
 }
@@ -57,7 +60,7 @@
     background-image: url(./assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 165px 196px;
+    padding: 165px 0;
 }
 #early-access{
     display: flex;
@@ -76,7 +79,8 @@
     width: 16px;
     height: 16px;
 }
-#early-access p{
+#early-access a{
+    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     color: #469165;
@@ -89,8 +93,8 @@
     font-size: 72px;
     font-weight: 700;
     margin-top: 24px;
-    width: 808px;
-    height: 168px;
+    max-width: 808px;
+    width: 100%;
     margin: 16px auto;
     line-height: 84px;
 }
@@ -101,8 +105,9 @@
     color: white;
     font-size: 18px;
     font-weight: 400;
-    width: 700px;
-    margin: 0px auto 32px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto 32px;
     line-height: 32px;
 }
 #hero-buttons{
@@ -123,6 +128,7 @@
     background-color: #469165;
     color: white;
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
 }
 #hero-buttons2{
     color: white;
@@ -137,13 +143,17 @@
     background-color: rgba(121, 52, 52, 0);
     border: 1px solid white;
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
+
 }
 #hero-buttons1:hover{
+    background-color: #44b473;
     box-shadow: 0 8px 20px rgba(70, 145, 101, 0.4);
     transform: translateY(-2px);
 }
 #hero-buttons2:hover{
-    box-shadow: 0 8px 20px rgba(170, 168, 168, 0.3);
+    background-color: rgba(0, 0, 0, 0.205);
+    box-shadow: 0 8px 20px rgba(170, 168, 168, 0.4);
     transform: translateY(-2px);
 }
 .notes-section{
@@ -206,7 +216,7 @@
 }
 .solution-section{
     padding: 120px 0;
-    margin-top: -70px;
+    margin-top: -50px;
     z-index: 99;
     background-color: white;
     position: relative;
@@ -219,6 +229,8 @@
 }
 #solution-image img{
     border-radius: 12px;
+    width: 600px;
+    height: 600px;
 }
 
 #solution-text h3{
@@ -231,14 +243,19 @@
     font-size: 48px;
     font-weight: 700;
     color: rgba(0, 25, 49, 1);
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
 }
 #solution-text p{
     font-size: 16px;
     font-weight: 400;
     color: rgba(98, 115, 130, 1);
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     margin: 20px auto;
+}
+#solution-text ul{
+    list-style: none;
 }
 #solution-text ul li{
     color: rgba(0, 25, 49, 1);
@@ -246,9 +263,19 @@
     font-weight: 500;
     line-height: 35px;
 }
-#solution-text ul li{
-    list-style-image: url(assets/CheckCircle.png);
+#solution-text ul li::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    background: url("assets/CheckCircle.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
 }
+
 .cta-container{
     background-color: #f7f6f2;
     padding: 80px 40px;
@@ -260,6 +287,7 @@
     font-size: 40px;
     font-weight: 700;
     color: rgba(0, 25, 49, 1);
+    text-transform: capitalize;
 }
 .cta-container p{
     font-size: 16px;
@@ -279,8 +307,10 @@
     justify-content: center;
     gap: 10px;
     margin: 0 auto;
+    transition: all 0.25s ease-in-out;
 }
 .cta-container button:hover{
+    background-color: #44b473;
     box-shadow: 0 8px 20px rgba(70, 145, 101, 0.4);
     transform: translateY(-2px);
 }
@@ -292,7 +322,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 0px;
+    padding: 120px 0;
 }
 #footer-img-link img{
     width: 139px;
@@ -316,8 +346,11 @@
 #footer-copyright{
     color: white;
     text-align: center;
-    padding: 30px 0px;
+    padding: 30px 0;
 }
 #footer-copyright h5{
     font-weight: 400;
+}
+hr{
+    border: 1px solid  rgba(229, 231, 235, 0.2);
 }
