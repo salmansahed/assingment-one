@@ -248,3 +248,34 @@
 #solution-text ul li{
     list-style-image: url(assets/CheckCircle.png);
 }
+.cta-container{
+    background-color: #f7f6f2;
+    padding: 80px 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+.cta-container h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(0, 25, 49, 1);
+}
+.cta-container p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(98, 115, 130, 1);
+    width: 600px;
+    margin: 16px auto 24px;
+}
+.cta-container button{
+    background-color: #448d62;
+    padding: 12px 16px ;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
